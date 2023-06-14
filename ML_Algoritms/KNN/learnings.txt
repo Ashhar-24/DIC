@@ -1,0 +1,23 @@
+KNN: K-Nearest Neighbours, K: an odd Integer
+    It is used for classification ie, instead of giving a nnumerical value like grades or stock price, it attempts to classify data into certain categories.
+    k: It indicates the no. of points that we'll be using to classify the given data point by calculating the distance.
+
+Introduction: 
+    We basically classify the given test data into different class based on the closeness to the given class (by calculating the distance).
+    K-Nearest Neighbors works by looking at the K closest points to the given data point (the one we want to classify) and picking the class that occurs the most to be the predicted value. This is why this algorithm typically works best when we can identify clusters of points in our data set. (with linear dependency)
+    
+<See attached pic: The x_train dataset are the values that we're giving to the model and y_train are the name that we're giving to each class. 
+                    x_test are the testing data which are to be classified into labels and then compare with y_train to calculate the accuracy.>
+
+Limitation/ Drawbacks: 
+    Training/Prediction Time. Since the algorithm finds the distance between the data point and every point in the training set it is very computationally heavy. Unlike
+     algorithms like linear regression which simply apply a function to a given data point the KNN algorithm requires the entire data set to make a prediction. This 
+     means every time we make a prediction we must wait for the algorithm to compare our given data to each point. In data sets that contain millions of elements this 
+     is a HUGE drawback.
+    Another drawback of the algorithm is its memory usage. Due to the way it works (outlined above) it requires that the entire data set be loaded into memory to 
+    perform a prediction. It is possible to batch load our data into memory but that is extremely time consuming.
+
+Summary:
+    The K-Nearest Neighbor algorithm is very good at classification on small data sets that contain few dimensions (features). It is very simple to implement and is a 
+    good choice for performing quick classification on small data. However, when moving into extremely large data sets and making a large amount of predictions it is 
+    very limited.

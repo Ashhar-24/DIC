@@ -1,5 +1,32 @@
- panda is used for data manipulation and analysis
- numpy is used for 
+=> Libraries used: 
+    Pandas: Pandas is a powerful library for data manipulation and analysis. It provides data structures like DataFrames 
+            to efficiently handle and analyze structured data. Pandas offers various functions and methods for tasks such as 
+            reading and writing data, filtering, transforming, and summarizing data, handling missing values, and merging datasets.
+
+    Numpy: NumPy is a fundamental library for numerical computing in Python. It provides support for large, multi-dimensional arrays
+           and matrices, along with a collection of mathematical functions to operate on these arrays. NumPy is commonly used for 
+           tasks involving numerical operations, linear algebra, random number generation, and data reshaping.
+
+    Scikit-learn: It provides a wide range of tools and algorithms for various machine learning tasks, including classification,
+                  regression, clustering, dimensionality reduction, and model selection.
+
+    Linear Regression from Scikit-learn: Scikit-learn provides a linear_model module that includes various linear regression models.
+                 Linear regression is a supervised learning algorithm used for modeling the relationship between a dependent variable
+                 and one or more independent variables.
+    
+    Matplotlib:  Matplotlib is a widely used plotting library in Python. It provides a flexible and comprehensive set of functions
+               for creating various types of plots and visualizations, such as line plots, scatter plots, bar plots, histograms, etc.
+               It is highly customisable allowing you to control aspects like axes, labels, colors, and annotations to create visually appealing plots.
+
+    Pickle: Allows you to save Python objects to a file and load them back into memory. Pickle is commonly used for tasks like 
+            saving trained machine learning models to disk for later use or sharing.
+
+    R2 Score from Scikit-learn: R2 score, also known as the coefficient of determination, is a metric used to evaluate the 
+                performance of regression models. It measures the proportion of the variance in the dependent variable that can 
+                be explained by the independent variables.
+
+    Style from Matplotlib: Style is a submodule of Matplotlib that allows you to customize the appearance of your plots 
+                            by applying predefined or user-defined styles.
 
 
 => Linking the spreadsheet with pythin file

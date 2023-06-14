@@ -1,0 +1,59 @@
+ panda is used for data manipulation and analysis
+ numpy is used for 
+
+
+=> Linking the spreadsheet with pythin file
+ ''' read_csv() => a function in pandas to read data from csv file.
+    .csv stands for comma separated values
+    sep => It stores the delimiter (character that separates the values in a csv file)
+'''
+
+# Each column corresponds to an attribute.
+
+=> Removing the attribute that is to be determined
+''' Will return DataFrame with no column for G3 and it is going to be our training data, ie, x will have all the attributes except the label (attributes to be predicted)
+    1 is the value of the axis parameter
+    Axis paramter=> It denotes the axis or parameter along which the operation is to be performed ie, axis=0: along ROW (horizontally) and axis=1: along COLUMN (vertically)
+'''
+
+=> Spliting of data
+'''
+    train_test_split() function from the sklearn.model_selection module is used to split the dataset into training and testing subsets as follows:
+    Parameters it takes:
+        x: input features | y: target variable of the dataset that is to be splitted 
+        test_size: This parameter determines the proportion of the dataset that will be allocated for testing. In this case, test_size=0.1 indicates that 10% of the
+                   data will be used for testing, while the remaining 90% will be used for training.
+    Outputs:
+        x_train: contains the training data for the input features. It will be used to train the machine learning model.
+        y_train: contains the training data for the target variable. It corresponds to the target values of the x_train data.
+        x_test: contains the testing data for the input features. It will be used to evaluate the trained model's performance.
+        y_test: contains the testing data for the target variable. It corresponds to the target values of the x_test data.
+
+    ie, By splitting the dataset into training and testing subsets, you can train a machine learning model on the training data and then evaluate its performance on the unseen testing data.
+'''
+
+=> Linear Regression
+    # Linear Regression is a supervised machine learning algorithm that is used to predict the value of a continuous variable based on one or more input features.
+    # Linear regression is a linear model, e.g. a model that assumes a linear relationship between the input variables (x) and the single output variable (y).
+
+'''
+    LinearRegression() => It is a function in the linear_model module of the sklearn library that is used to perform linear regression in Python.
+                          Line 64: Creates an instance of the LinearRegression class, which represents a linear regression model.
+    The fit() method is used to train the linear regression model on the training data. It takes two arguments: x_train represents the input features or independent
+                        variables, and y_train represents the target variable or dependent variable.
+    The score() method is used to evaluate the performance of the machine learning model. It takes two arguments: x_test represents the input features of the testing
+                        data, and y_test represents the target variable of the testing data. The score() method returns the coefficient of determination (R²) of the prediction.
+'''
+
+=> Saving the trained model
+    Pickle is used to save the trained model so that we don't have to train the model everytime we want to use it. Here a file named studentmodel.pickle is created and the trained model is saved in it.
+    wb => write bytes
+    pickle.dump() => It is used to save the trained model in the studentmodel.pickle file. It takes two arguments: the first argument is the trained model, and the second argument is the file object.
+
+=> Loading the saved model:
+    pickle.load() => It is used to load the trained model from the studentmodel.pickle file. It takes one argument, which is the file object.
+    By loading the trained model, you can use it to generate predictions on the unseen data. 
+
+=> Predicting with the trained model:
+    predict() => Used to generate predictions using the trained (linear regression) model on the test data.
+    The for loop iterates through the predictions list and prints the predicted value, the input features, and the actual value of the target variable.

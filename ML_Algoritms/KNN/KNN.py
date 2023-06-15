@@ -49,3 +49,4 @@ for x in range(len(predicted)):
     # Now we will print the neighbors of each point in our testing data and see how many of them are in the same class 
     # n = model.kneighbors([x_test[x]], 9, True)
     # print("N:", n) # n is a tuple of 2 arrays, 1st array is the distance and 2nd array is the index of the neighbors
+    

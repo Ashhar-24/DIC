@@ -1,0 +1,9 @@
+SVM => Support Vector Machine:
+         Used for classification (also regression) tasks similar to what we did with K Nearest Neighbors. It is a powerful tool that is a good choice for
+        classifying complicated data with a high degree of dimensions(features). Note that K-Nearest Neighbors does not perform well on high-dimensional data.
+        
+=> Loading data:
+    Sklearn provides with some dataset to work on. (dataset.load) that are much easy to use.
+
+=> Working Process:
+    Hyper plane: 

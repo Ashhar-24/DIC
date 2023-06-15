@@ -6,4 +6,31 @@ SVM => Support Vector Machine:
     Sklearn provides with some dataset to work on. (dataset.load) that are much easy to use.
 
 => Working Process:
-    Hyper plane: 
+    Hyper plane: A line (in 2D) or a plane (in 3D) that can divide the data points. For higher dimension, it is simply called a hyper-plane. We define it as follows:
+                 We pick two data points (called support vectors) and draw a line (in 2D) such that the distance b/w the two points are same. By defining the hyper-plane,
+                 the process of classification becomes easy.
+            
+            With above said rule, there can be infinite hyper-planes. We choose that hyper-plane which has got the largest possible margin. 
+    Margin: It is the distance that separates all the points.  The greater is the distance the better will be classification.
+
+    Kernel: It is used to change the dimentionality (2D -> 3D) of the data points. By doing this we're able to define the hyper-plane that helps us to classify the data.
+            Simply talking, a kernel is a function that takes in coordinates (in 2D-> x1.x2) and returns an extra coordinate (x3) which adds to an extra dimentionality.
+            Examples of popular kernels. – Linear – Polynomial – Circular – Hyperbolic Tangent (Sigmoid)
+
+    Sometimes while defining the margin we come across situations where we've to add data point(s) in b/w the margins, so that the best hyper-plane can be defined.
+    Such margins are called as soft margins. Whereas hard margins don't have any data point b/w them.
+    The amount of points we allow to exists inside the margin is something we can define as hyper-parameter. 
+
+=> Working flow:
+    from sklearn import svm
+    clf = svm.SVC()
+    clf.fit(x_train, y_train)   => Importing and trainig the model with x_train and y_train
+
+    y_pred = clf.predict(x_test) 
+    acc = metrics.accuracy_score(y_test, y_pred)   => Testing and comparing with values for accuracy.
+
+    We often see less accuracy, it's because of lack of kernel. Adding a dimentionality increases the accuracy of our model. (along with changing the soft margin)
+    Kernel Options: linear, poly, rbf, sigmoid, precomputed
+    
+    By default our kernel has a soft margin of value 1. This parameter is known as C. We can increase C to give more of a soft margin, we can also decrease 
+    it to 0 to make a hard margin.

@@ -1,0 +1,32 @@
+=> Supervised/Unsupervised Learning Algorithms:
+    Divided based on type of training data they use and the objective they aim to achieve.
+        Supervised learning:  The goal is to learn a mapping function that can predict the correct labels for new, unseen inputs. The process involves
+        training the model using labeled examples, where the algorithm learns from the input-output pairs.
+        Characteristics of supervised learning:
+                a. Labelled data:  Includes both input features and their corresponding correct output labels.
+                b. Learning task:  The model learns to generalize patterns and relationships between input features and output labels
+                c. Objective: The primary objective is to minimize the prediction error or maximize the accuracy of the model's predictions.
+                Examples:  Classification and regression
+
+        Unsupervised learning: The training data consists of only input data (features) without any corresponding labels. The goal is to find patterns, structures, or 
+        relationships within the data without explicit guidance or predefined categories. Unsupervised learning algorithms aim to discover meaningful insights and
+        representations from the data.
+        Characteristics of unsupervised learning:
+                a. Unlabeled data: The training data only contains input features without any associated labels or targets.
+                b. Learning task: The model explores the inherent structure of the data, identifying patterns, similarities, or clusters without predefined categories.
+                c. Objective: The primary objective is to uncover hidden patterns, groupings, or representations that can provide insights into the data.
+                Examples: Clustering, dimensionality reduction and anomaly detection
+
+        Summary: Supervised learning deals with labeled data and aims to learn a mapping between input features and output labels for prediction or 
+        classification tasks. Unsupervised learning works with unlabeled data and focuses on discovering hidden patterns, structures, or relationships
+        within the data without any predefined categories.
+
+=> K Means Clustering: Cluster means to group similar data points together. 'K' (0-9) here means how many clusters (sections) are the data points to be divided. 
+                We do it by placing k centroids (randomly) and repeat this process:
+                    Step 1: Randomly pick K points to place K centroids 
+                    Step 2: Assign all of the data points to the centroids by distance. The closest centroid to a point is the one it is assigned to. 
+                    Step 3: Average all of the points belonging to each centroid to find the middle of those clusters (center of mass). 
+                        Place the corresponding centroids into that position. 
+                    Step 4: Reassign every point once again to the closest centroid. 
+                    Step 5: Repeat steps 3-4 until no point changes which centroid it belongs to.
+

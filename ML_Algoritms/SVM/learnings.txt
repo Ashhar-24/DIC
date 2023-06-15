@@ -32,5 +32,8 @@ SVM => Support Vector Machine:
     We often see less accuracy, it's because of lack of kernel. Adding a dimentionality increases the accuracy of our model. (along with changing the soft margin)
     Kernel Options: linear, poly, rbf, sigmoid, precomputed
     
-    By default our kernel has a soft margin of value 1. This parameter is known as C. We can increase C to give more of a soft margin, we can also decrease 
+    By default our kernel has a soft margin of value 1. This parameter is known as C (hyper-parameter). We can increase C to give more of a soft margin, we can also decrease 
     it to 0 to make a hard margin.
+
+=> Comparision with KNN:
+    SVM has greater accuracy as compared to KNN due to kernel and hence it acts a better classification algorithm.
